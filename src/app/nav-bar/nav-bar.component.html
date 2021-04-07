@@ -1,0 +1,8 @@
+<nav>
+  <app-nav-item *ngFor="let link of listLinks" 
+  [item]="link" (clickedItem)="onClikedItemLink.title" >
+  </app-nav-item>
+</nav>
+<div>
+  Clicked item :{{ showItemClicked }}
+</div>
